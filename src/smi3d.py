@@ -40,7 +40,9 @@ def main() -> None:
     if args.num_confs == 1:
         cmd = "python {0}/tools/gen_3d_structs.py -i {1} -o {2} -t {3}".format(root, input_file, output_file, args.max_time)
     else:
-        cmd = "python {0}/tools/gen_confs.py -i {1} -o {2}".format(root, input_file, output_file)
+        cmd = "python {0}/tools/gen_confs.py -i {1} -o {2} -t {3} -n {4}".format(root, input_file, output_file, args.max_time, args.num_confs)
+
+    print(cmd)
 
     subprocess.Popen(cmd, shell=True).wait()
 
