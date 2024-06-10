@@ -12,6 +12,10 @@ conda activate smiles3d
 pip install rdkit==2023.9.6
 pip install cdpkit==1.1.1
 ```
+or directly install in your preferred environment:
+```bash
+pip install git+https://github.com/ersilia-os/smiles-to-3d.git
+```
 
 # Usage
 
