@@ -73,7 +73,7 @@ def generate_conformers(in_file, out_file, max_time=60, num_confs=10, quiet=Fals
     subprocess.Popen(cmd, shell=True).wait()
 
     # Now, let's read the output SDF file and add _Name property to each molecule conformer
-    sdf_supplier = Chem.SDMolSupplier(output_file)
+    sdf_supplier = Chem.SDMolSupplier(output_file, removeHs=False)
     conf_counts = {}
     mols_with_names =[]
     for mol in sdf_supplier:
