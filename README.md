@@ -28,5 +28,7 @@ You can pass the following specifications:
 * Number of conformers (-n): by default 10
 * Time to process molecule (-1): by default 60s max
 
+The input file must have one column named "smiles" and one column named "id"
+
 # License
 Ersilia code is licensed under a GPLv3 License. The packages used are licensed according to their original licenses.

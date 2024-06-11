@@ -4,7 +4,7 @@ with open("requirements.txt") as f:
     install_requires = f.read().splitlines()
 
 setup(
-    name="smiles-to-3d",
+    name="smiles3d",
     version="0.1.0",
     author="Miquel Duran-Frigola, Ersilia Open Source Initiative",
     author_email="miquel@ersilia.io",
