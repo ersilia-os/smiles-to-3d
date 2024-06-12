@@ -21,7 +21,7 @@ pip install git+https://github.com/ersilia-os/smiles-to-3d.git
 
 ```bash
 cd smiles-to-3d
-python src/smi3d.py -i example/molecules.csv -o example/molecules.sdf
+python smiles3d/smiles3d.py -i example/molecules.csv -o example/molecules.sdf
 ```
 
 You can pass the following specifications:
