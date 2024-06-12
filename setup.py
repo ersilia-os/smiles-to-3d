@@ -14,7 +14,7 @@ setup(
     python_requires=">=3.9",
     install_requires=install_requires,
     extras_require={},
-    packages=find_packages(exclude=("utilities")),
+    packages=find_packages(),
     classifiers=(
         "Programming Language :: Python :: 3.9",
         "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
