@@ -12,12 +12,9 @@ RDLogger.DisableLog('rdApp.*')
 
 root = os.path.dirname(os.path.abspath(__file__))
 
-tmp_dir = tempfile.mkdtemp(prefix='smi3d_')
-
 
 def generate_conformers(in_file, out_file, max_time=60, num_confs=10, quiet=False):
-
-
+    tmp_dir = tempfile.mkdtemp(prefix='smi3d_')
     input_file = os.path.join(tmp_dir, 'input.sdf')
     output_file = os.path.join(tmp_dir, 'output.sdf')
     output_file2 = os.path.join(tmp_dir, 'output2.sdf')
