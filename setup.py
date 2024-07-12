@@ -11,7 +11,7 @@ setup(
     url="https://github.com/ersilia-os/smiles-to-3d",
     description="CDPKit based module to convert lists of smiles to 3D conformers",
     license="GPLv3",
-    python_requires=">=3.9",
+    python_requires=">=3.8",
     install_requires=install_requires,
     extras_require={},
     packages=find_packages(),

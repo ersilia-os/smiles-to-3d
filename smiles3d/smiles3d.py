@@ -7,6 +7,7 @@ import shutil
 from rdkit import Chem
 from rdkit.Chem import inchi
 from rdkit import RDLogger
+from rdkit.Chem import AllChem
 
 RDLogger.DisableLog('rdApp.*')  
 
@@ -45,7 +46,8 @@ def generate_conformers(in_file, out_file, max_time=60, num_confs=10, quiet=Fals
     idxs = []
     mols = []
     for i, (smi, mol_id) in enumerate(zip(smiles_list, id_list)):
-        mol = Chem.MolFromSmiles(smi)
+        mol = Chem.AddHs(Chem.MolFromSmiles(smi))
+        AllChem.Compute2DCoords(mol)
         if mol is None:
             continue
         idxs += [i]
