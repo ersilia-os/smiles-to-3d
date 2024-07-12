@@ -12,7 +12,7 @@ setup(
     description="CDPKit based module to convert lists of smiles to 3D conformers",
     license="GPLv3",
     python_requires=">=3.8",
-    install_requires=install_requires,
+    install_requires=["rdkit==2023.9.5", "cdpkit==1.1.1"]
     extras_require={},
     packages=find_packages(),
     classifiers=(
